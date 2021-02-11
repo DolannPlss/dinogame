@@ -1,0 +1,43 @@
+body{
+    background: #fafafa;
+}
+.dino {
+   width: 60px;
+   height: 60px;
+   background-image: url(dino.png);
+    position: absolute;
+    bottom: 0;
+}
+.cacto{
+    width: 60px;
+   height: 60px;
+    position: absolute;
+    bottom: 0;
+    background-image:url(cactus.png);
+}
+.game-over{
+    text-align: center;
+    color: #666666;
+    margin-top: 50;
+    font-family: arial;
+}
+
+@keyframes escurregadireita {
+    from{
+        background-position: 70000%;
+
+    }
+    to{
+        background-position: 0;
+    }
+
+}
+.fundo {
+    position: absolute;
+    bottom 0;
+    background-image: url(background.png);
+    background-repeat: repeat-x;
+    animation: escurregadireita 600s infinite linear;
+    width: 100%;
+    height: 200px;
+}
